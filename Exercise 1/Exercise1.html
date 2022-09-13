@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+    
+        function NewApp () {
+            return (
+                <div>
+                    <h1> My name is Thong Dang </h1>
+                    <p> I am a student of OAMK at a class DIN21SP </p>
+                    <p> I come from Viet Nam! </p>
+                    <p> Welcome to my website! </p>
+                </div>
+            )
+        }
+
+      const container = document.getElementById('root');
+      const root = ReactDOM.createRoot(container);
+      root.render(<NewApp />);
+
+    </script>
+  
+    
+  </body>
+</html>
